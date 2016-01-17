@@ -1,0 +1,26 @@
+{
+  "name": "Otp",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "mobileOtp": {
+      "type": "string"
+    },
+    "mobileOtpExpiry": {
+      "type": "date"
+    },
+    "emailOtp": {
+      "type": "string"
+    },
+    "emailOtpExpriy": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

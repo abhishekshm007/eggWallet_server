@@ -1,0 +1,29 @@
+{
+  "name": "EggWallet",
+  "version": "0.1.0",
+  "description": "An e-wallet",
+  "main": "index.html",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-animate": "^1.4.8",
+    "angular-aria": "^1.4.8",
+    "angular-material": "^1.0.1",
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "~1.0.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-connect": "~0.9.0",
+    "grunt-newer": "~0.8.0",
+    "grunt-este-watch": "~0.1.18",
+    "grunt-express": "~1.0",
+    "grunt-bumpup": "~0.6.2",
+    "grunt-browser-sync": "~1.5.3",
+    "grunt-jslint": "^1.1.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Scoop Themes",
+  "license": "CC0"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "LastLogin",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "os": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "ip": {
+      "type": "string"
+    },
+    "browser": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

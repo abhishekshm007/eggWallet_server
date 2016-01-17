@@ -1,0 +1,150 @@
+{
+  "name": "Seller",
+  "plural": "Sellers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "realm": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": false
+    },
+    "shopName": {
+      "type": "string",
+      "required": false
+    },
+    "mobile": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string"
+    },
+    "mobileVerified": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "address": {
+      "type": "string"
+    },
+    "emailVerified": {
+      "type": "boolean",
+      "default": false
+    },
+    "password": {
+      "type": "string",
+      "required": false
+    },
+    "created": {
+      "type": "date",
+      "required": true
+    },
+    "lastUpdated": {
+      "type": "date",
+      "required": true,
+      "default": "$now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "shopType": {
+      "type": "embedsOne",
+      "model": "ShopType",
+      "property": "shopType",
+      "options": {
+        "validate": true,
+        "forceId": false,
+        "persistent": true
+      }
+    },
+    "registrationDevice": {
+      "type": "hasMany",
+      "model": "RegistrationDevice",
+      "foreignKey": "userId"
+    },
+    "lastLogin": {
+      "type": "embedsMany",
+      "model": "LastLogin",
+      "property": "lastLogins",
+      "options": {
+        "validate": true,
+        "forceId": false,
+        "persistent": true
+      }
+    },
+    "accessTokenxs": {
+      "type": "hasMany",
+      "model": "AccessTokenx",
+      "foreignKey": "userId"
+    },
+    "gcms": {
+      "type": "hasMany",
+      "model": "Gcm",
+      "foreignKey": "userId"
+    },
+    "hitCount": {
+      "type": "embedsOne",
+      "model": "HitCount",
+      "property": "hitCount",
+      "options": {
+        "validate": true,
+        "forceId": false,
+        "persistent": true
+      }
+    },
+    "otp": {
+      "type": "embedsOne",
+      "model": "Otp",
+      "property": "otp",
+      "options": {
+        "validate": true,
+        "forceId": false,
+        "persistent": true
+      }
+    },
+    "customers": {
+      "type": "hasMany",
+      "model": "Customers",
+      "foreignKey": "userId"
+    },
+    "products": {
+      "type": "hasMany",
+      "model": "Products",
+      "foreignKey": "userId"
+    },
+    "secondaryMobiles": {
+      "type": "hasMany",
+      "model": "SecondaryMobiles",
+      "foreignKey": "userId"
+    },
+    "dues": {
+      "type": "embedsMany",
+      "model": "Due",
+      "property": "dues",
+      "options": {
+        "validate": true,
+        "forceId": false,
+        "persistent": true
+      }
+    },
+    "sellerTransactions": {
+      "type": "embedsMany",
+      "model": "SellerTransaction",
+      "property": "sellerTransactions",
+      "options": {
+        "validate": true,
+        "forceId": false,
+        "persistent": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

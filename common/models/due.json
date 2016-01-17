@@ -1,0 +1,32 @@
+{
+  "name": "Due",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "paidType": {
+      "type": "string"
+    },
+    "customerId": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "name": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

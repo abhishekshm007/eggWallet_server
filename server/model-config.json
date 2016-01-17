@@ -1,0 +1,131 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mongoDS"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "AccessTokenx": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "LastLogin": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "Address": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "Buyer": {
+    "dataSource": "mongoDS",
+    "public": true
+  },
+  "SavedWallet": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "Seller": {
+    "dataSource": "mongoDS",
+    "public": true
+  },
+  "Product": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "Customer": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "SellerTransaction": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "SecondaryMobile": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "Investment": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "Due": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "Locale": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "Otp": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "RegistrationDevice": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "ReferralDetail": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "Gcm": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "ShopType": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "ShopTypeList": {
+    "dataSource": "mongoDS",
+    "public": true
+  },
+  "HitCount": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "Wallet": {
+    "dataSource": "mysqlDS",
+    "public": true
+  },
+  "RequestMoney": {
+    "dataSource": "mongoDS",
+    "public": false
+  },
+  "TransactionW2W": {
+    "dataSource": "mysqlDS",
+    "public": true
+  },
+  "Support": {
+    "dataSource": "mongoDS",
+    "public": false
+  }
+}

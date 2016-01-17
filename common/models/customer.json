@@ -1,0 +1,28 @@
+{
+  "name": "Customer",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "userId": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "visits": {
+      "type": "embedsMany",
+      "model": "Visit",
+      "property": "visits",
+      "options": {
+        "validate": true,
+        "forceId": false,
+        "persistent": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

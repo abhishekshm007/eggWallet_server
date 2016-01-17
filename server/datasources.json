@@ -1,0 +1,41 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongoDS": {
+    "host": "0.0.0.0",
+    "port": 27017,
+    "database": "eggwallet",
+    "password": "ainaa",
+    "name": "mongoDS",
+    "connector": "mongodb",
+    "user": "ainaa"
+  },
+  "mysqlDS": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "database": "eggwallet",
+    "password": "ainaa",
+    "name": "mysqlDS",
+    "connector": "mysql",
+    "user": "root"
+  },
+  "emailDS": {
+        "name": "mail",
+        "defaultForType": "mail",
+        "connector": "mail",
+        "transports": [
+          {
+            "type": "SMTP",
+            "host": "smtp.gmail.com",
+            "secure": true,
+            "port": 465,
+            "auth": {
+              "user": "egnessegroup@gmail.com",
+              "pass": "qwqwqw123"
+            }
+          }
+        ]
+      }
+}

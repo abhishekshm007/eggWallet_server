@@ -1,0 +1,23 @@
+{
+  "name": "SecondaryMobile",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "mobile": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

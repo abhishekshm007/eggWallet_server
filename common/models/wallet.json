@@ -1,0 +1,24 @@
+{
+  "name": "Wallet",
+  "plural": "Wallets",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "balance": {
+      "type": "number",
+      "required": true
+    },
+    "lastUpdated": {
+      "type": "date",
+      "required": true,
+      "default": "$now"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

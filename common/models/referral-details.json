@@ -1,0 +1,20 @@
+{
+  "name": "ReferralDetail",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "referredTo": {
+      "type": "string"
+    },
+    "referralDate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
